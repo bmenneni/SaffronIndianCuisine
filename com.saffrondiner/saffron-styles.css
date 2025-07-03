@@ -69,6 +69,51 @@ nav a.active {
   margin-left: auto;
 }
 
+/* ===Desktop View=== */
+@media (min-width: 769px) {
+  /* Ensure header is a flex container */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Logo + hamburger (left side) */
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Nav container (centered) */
+  #main-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Fill remaining space */
+    justify-content: center;
+    position: relative;
+  }
+
+  .center-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Center links (horizontal layout) */
+  .center-nav ul {
+    display: flex;
+    gap: 1.5rem; /* Spacing between links */
+    list-style: none;
+  }
+
+  /* Order button (far right) */
+  .order-btn {
+    position: absolute;
+    right: 2rem; /* Push to far right */
+  }
+}
+
+
 @media (max-width: 768px) {
   header {
     flex-direction: row;
