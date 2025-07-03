@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catering | Saffron Indian Cuisine</title>
+  <link rel="stylesheet" href="saffron-styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="index.html">
+        <img src="saffron-indian-cuisine.jpg" class="logo" alt="Saffron Logo">
+      </a>
+      <!-- Hamburger button (shown only on mobile) -->
+      <button id="hamburger-btn" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="catering.html" class="active">Catering</a></li>
+        <li><a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="order-btn">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catering-page">
+    <h2 class="menu-title">Saffron Indian Cuisine – Exquisite Indian Catering for Every Occasion</h2>
+    
+    <p class="intro-paragraph">
+      Elevate your event with the rich flavors and vibrant aromas of India. At <strong>Saffron Indian Cuisine</strong>, we bring the essence of authentic Indian dining to your special occasions through our expertly crafted catering services.
+      Whether you're hosting an intimate gathering, corporate event, wedding, or festival, our culinary team ensures a memorable experience for every guest.
+    </p>
+
+    <section class="catering-section">
+      <h3>🌿 Why Choose Saffron Catering?</h3>
+      <ul class="catering-list">
+        <li><strong>Authentic Indian Flavors:</strong> Time-honored recipes and the finest spices bring traditional Indian dishes to life.</li>
+        <li><strong>Customizable Menus:</strong> A wide variety of Vegetarian, Non-Vegetarian, and Indo-Chinese options tailored to your preferences.</li>
+        <li><strong>Professional Service:</strong> Onsite delivery or curbside pickup available. Schedule a time that works for you (delivery charges apply).</li>
+        <li><strong>Dietary Flexibility:</strong> We offer vegan and gluten-free options to ensure every guest is accommodated.</li>
+      </ul>
+    </section>
+
+    <section class="catering-section">
+      <h3>🍽️ Popular Catering Packages Include:</h3>
+      <ul class="catering-list">
+        <li>Wedding Banquets</li>
+        <li>Corporate Lunches & Dinners</li>
+        <li>Birthday Parties & Anniversaries</li>
+        <li>Festival & Religious Celebrations</li>
+        <li>Live Stations and Buffet Style Services</li>
+      </ul>
+    </section>
+
+    <section class="catering-section contact-box" id="catering-contact-box">
+      <h3>📞 Contact Us Today</h3>
+      <p>
+        Let Saffron Indian Cuisine turn your event into a flavorful celebration. We cater with heart, tradition, and a commitment to excellence.
+      </p>
+      <p>
+        To discuss your event and receive a customized catering proposal, contact us at:<br>
+        <strong>Phone: (515) 897-0460</strong> <br>
+        <strong>Email:</strong> <a href="mailto:info@saffrondiner.com">info@saffrondiner.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saffron Indian Cuisine. All rights reserved.</p>
+  </footer>
+  <script>
+  const hamburger = document.getElementById("hamburger-btn");
+  const nav = document.getElementById("main-nav");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+  </script>
+</body>
+</html>

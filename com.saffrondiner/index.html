@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saffron Indian Cuisine</title>
+  <link rel="stylesheet" href="saffron-styles.css" />
+</head>
+  <header>
+    <div class="header-left">
+      <a href="index.html">
+        <img src="saffron-indian-cuisine.jpg" class="logo" alt="Saffron Logo">
+      </a>
+      <!-- Hamburger button (shown only on mobile) -->
+      <button id="hamburger-btn" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="order-btn">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div id="hero-content">
+        <h2>Welcome to Saffron Indian Cuisine</h2>
+        <p>Authentic flavors of India in every bite. Experience a vibrant culinary journey right here in Des Moines.</p>
+        <a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="cta-button">Order Now</a>
+      </div>
+      <div id="location-wrapper">
+        <div class="sub-hero-div">
+          <h3>Open Hours</h3>
+          <p>Tuesday to Thursday: 11am-2pm, 4pm-9pm</p>
+          <p>Friday: 11am-2pm, 4pm-9:30pm</p>
+          <p>Saturday: 11am-2:30pm, 4pm-9:30pm</p>
+          <p>Sunday: 11am-2:30pm, 4pm-9pm</p>
+          <p>Monday: Closed</p>
+        </div>
+        <div class="sub-hero-div" id="location-div">
+          <h3>LOCATION AND CONTACT</h3>
+          <p>8769 Northpark Dr</p>
+          <p>Johnston, IA 50131</p>
+          <p>(515) 897-0460</p>
+        </div>
+        <div id="map-div">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.1314041994365!2d-93.74092182368527!3d41.655665671267116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee9d83fd0709a1%3A0x66158df3b0bf4524!2s8769%20Northpark%20Dr%2C%20Johnston%2C%20IA%2050131!5e1!3m2!1sen!2sus!4v1750944345070!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Saffron Indian Cuisine. All rights reserved.</p>
+  </footer>
+  <script>
+  const hamburger = document.getElementById("hamburger-btn");
+  const nav = document.getElementById("main-nav");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+  </script>
+</body>
+</html>
