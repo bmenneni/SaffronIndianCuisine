@@ -36,7 +36,7 @@
       <h3>Vegetarian Appetizers</h3>
       <div class="menu-grid">
         <div class="menu-card">
-          <h4>Veg Samosa (2 Pieces) </h4>
+          <h4>Veg Samosa (2 Pieces)</h4>
           <p class="price">$5.95</p>
           <p>Crispy turnovers stuffed with a spiced potato and green peas filling, served with chutneys.</p>
         </div>
@@ -51,7 +51,17 @@
           <p>Crispy samosa topped with spicy chickpeas, yogurt, tamarind, and mint chutney.</p>
         </div>
         <div class="menu-card">
-          <h4>Gobi 65 </h4>
+          <h4>Mirchi Bajji</h4>
+          <p class="price">$10.95</p>
+          <p>Green chilies dipped in seasoned chickpea flour batter and deep-fried to golden perfection.</p>
+        </div>
+        <div class="menu-card">
+          <h4>Cut Mirchi</h4>
+          <p class="price">$10.95</p>
+          <p>Our signature Mirchi Bajji sliced and double-fried until irresistibly crunchy, then topped with onions</p>
+        </div>
+        <div class="menu-card">
+          <h4>Gobi 65</h4>
           <p class="price">$13.95</p>
           <p>Cauliflower florets deep-fried in a tangy and spicy South Indian-style marinade.</p>
         </div>
@@ -150,11 +160,6 @@
           <h4>Chicken Majestic </h4>
           <p class="price">$14.95</p>
           <p>Tender chicken strips sautéed in a creamy spicy sauce.</p>
-        </div>
-        <div class="menu-card">
-          <h4>Sesame Chicken Pakora</h4>
-          <p class="price">$14.95</p>
-          <p>Crispy chicken bites coated in sesame and seasoned batter.</p>
         </div>
         <div class="menu-card">
           <h4>Shrimp Pakora </h4>
@@ -319,11 +324,6 @@
           <p>Chicken cooked in a wok with capsicum, onions, and tomatoes.</p>
         </div>
         <div class="menu-card">
-          <h4>Chicken Saag </h4>
-          <p class="price">$15.95</p>
-          <p>Chicken simmered with creamy spinach and spices.</p>
-        </div>
-        <div class="menu-card">
           <h4>Chicken Korma </h4>
           <p class="price">$15.95</p>
           <p>Mildly spiced chicken in a rich cashew and cream-based sauce.</p>
@@ -466,14 +466,9 @@
           <p>Stuffed eggplant and basmati rice slow-cooked with special masalas.</p>
         </div>
         <div class="menu-card">
-          <h4>Keema Biryani </h4>
+          <h4>Veg Keema Biryani </h4>
           <p class="price">$14.95</p>
-          <p>Basmati rice cooked with spiced minced meat for rich flavor.</p>
-        </div>
-        <div class="menu-card">
-          <h4>Gongura Paneer Biryani </h4>
-          <p class="price">$15.95</p>
-          <p>Paneer and tangy gongura leaves layered with aromatic rice.</p>
+          <p>Basmati rice cooked with spiced minced soy chunks for rich flavor.</p>
         </div>
         <div class="menu-card">
           <h4>Paneer Ghee Roast Biryani</h4>
@@ -501,11 +496,6 @@
           <p>Fried chicken pieces mixed with spiced basmati rice.</p>
         </div>
         <div class="menu-card">
-          <h4>Gongura Chicken Biryani </h4>
-          <p class="price">$15.95</p>
-          <p>Tangy gongura chicken and basmati rice in a flavorful combo.</p>
-        </div>
-        <div class="menu-card">
           <h4>Chicken Ghee Roast Biryani </h4>
           <p class="price">$15.95</p>
           <p>South Indian style chicken roast layered in aromatic rice.</p>
@@ -519,11 +509,6 @@
           <h4>Goat Fry Biryani</h4>
           <p class="price">$17.95</p>
           <p>Spiced goat fry and biryani rice served with raita.</p>
-        </div>
-        <div class="menu-card">
-          <h4>Gongura Goat Biryani </h4>
-          <p class="price">$17.95</p>
-          <p>Goat and gongura masala layered with aromatic rice.</p>
         </div>
         <div class="menu-card">
           <h4>Lamb Keema Biryani</h4>
@@ -748,9 +733,11 @@
   <script>
   const hamburger = document.getElementById("hamburger-btn");
   const nav = document.getElementById("main-nav");
+  const main = document.querySelector('main');
 
   hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
+    main.classList.toggle("menu-open");
   });
   </script>
 </body>
