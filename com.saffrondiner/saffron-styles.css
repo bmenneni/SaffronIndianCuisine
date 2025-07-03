@@ -5,8 +5,8 @@
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #f5f5f5;
+  background-color: #fff9de;
+  color: #db3b01;
   line-height: 1.6;
 }
 .logo {
@@ -20,7 +20,7 @@ body {
   margin-left: 75px;
 }
 header {
-  background-color: #000000;
+  background-color: #000;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -199,14 +199,14 @@ nav a.active {
 }
 .hero h2 {
   font-size: 2.5rem;
-  color: #ffae00;
+  color: #db3b01;
   margin-bottom: 1rem;
 }
 .hero p {
   font-size: 1.1rem;
-  color: #dddddd;
   max-width: 700px;
   margin: 0 auto 2rem;
+  font-weight: bold;
 }
 .cta-button {
   background-color: #ffae00;
@@ -232,13 +232,18 @@ nav a.active {
   padding: 1rem 1.25rem;
   text-align: left;
   color: #f5f5f5;
-  background-color: rgba(81, 81, 81, 0.8);
+  background-color: #1f1f1f;
   border-radius: 6px;
   width: fit-content;
 }
+.sub-hero-div p {
+  margin-bottom: 0.8rem;
+}
 .sub-hero-div h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-size: 1.05rem;
+  color: #ffae00;
+  text-align: center;
 }
 #map-div iframe {
   border-radius: 6px;
@@ -254,18 +259,21 @@ footer {
   color: #aaaaaa;
   font-size: 0.9rem;
   margin-top: 2rem;
+  font-weight: normal;
 }
 
 .bottom-statement {
   margin: auto;
   width: 80%;
+  font-weight: bold;
+}
+
+/* Main section */
+.main-background {
+  padding: 2rem;
 }
 
 /* Menu */
-.menu-page {
-  padding: 2rem;
-  background-color: #fff9de;
-}
 .menu-title {
   text-align: center;
   color: #db3b01;
@@ -280,6 +288,7 @@ footer {
   border-bottom: 2px solid #f5b400;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 .menu-grid {
   display: grid;
@@ -301,6 +310,9 @@ footer {
   color: #fff0c2;
   margin-bottom: 0.4rem;
 }
+.menu-card p {
+  color: #f5f5f5;
+}
 .menu-card .price {
   font-weight: bold;
   color: #f5b400;
@@ -316,26 +328,26 @@ footer {
 }
 
 /* Catering */
-.catering-page {
-  padding: 2rem;
-  color: #000000;
-}
 .intro-paragraph {
   max-width: 800px;
   margin: 0 auto 2rem auto;
   text-align: center;
   font-size: 1.05rem;
-  color: #dddddd;
   line-height: 1.8;
+  font-weight: bold;
 }
 
 .catering-section {
   max-width: 800px;
   margin: 2rem auto;
+  margin-bottom: 2.5rem;
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 .catering-section h3 {
-  color: #f5b400;
+  color: #fff0c2;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
@@ -348,15 +360,19 @@ footer {
   color: #f5f5f5;
 }
 
+.catering-list li strong {
+  color: #f5b400;
+}
+
 .contact-box {
-  background-color: #fff9de;
+  background-color: #1f1f1f;
   padding: 1.5rem;
   border-radius: 8px;
   text-align: left;
 }
 
 .contact-box a {
-  color: #db3b01;
+  color: #f5b400;
   text-decoration: underline;
 }
 
@@ -365,22 +381,37 @@ footer {
 }
 
 #catering-contact-box h3 {
-  color: #db3b01;
+  color: #fff0c2;
+}
+
+#catering-contact-box p {
+  color: #f5f5f5;
+  font-weight: normal;
+}
+
+#catering-contact-box p span {
+  color: #fff0c2;
 }
 
 /* ===== ABOUT PAGE STYLES ===== */
 .about-page {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
   line-height: 1.8;
+}
+
+#about-title {
+  text-align: center;
+  color: #f5b400;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 
 .about-section,
 .about-mission,
 .about-vision {
   margin-bottom: 2.5rem;
-  background-color: rgba(31, 31, 31, 0.85);
+  background-color: #1f1f1f;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -394,6 +425,6 @@ footer {
 
 .about-mission h3,
 .about-vision h3 {
-  color: #f5b400;
+  color: #fff0c2;
   margin-bottom: 1rem;
 }
