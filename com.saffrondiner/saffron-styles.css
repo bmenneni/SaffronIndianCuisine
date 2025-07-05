@@ -198,7 +198,7 @@ nav a.active {
 }
 
 @media (max-width: 768px) {
-  #location-wrapper {
+  #sub-hero-wrapper {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -222,15 +222,31 @@ nav a.active {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  min-height: 400px;
+  overflow: hidden;
+}
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 #hero-content {
+  position: relative;
+  z-index: 1;
   text-align: center;
+  padding: 4rem 2rem;
   max-width: 800px;
   margin: 0 auto;
+  background-color: #000;
+  border-radius: 8px;
 }
+
 .hero h2 {
   font-size: 2.5rem;
-  color: #db3b01;
   margin-bottom: 1rem;
 }
 .hero p {
@@ -238,6 +254,7 @@ nav a.active {
   max-width: 700px;
   margin: 0 auto 2rem;
   font-weight: bold;
+  color: #f5b400;
 }
 .cta-button {
   background-color: #ffae00;
@@ -252,7 +269,7 @@ nav a.active {
 .cta-button:hover {
   background-color: #e08700;
 }
-#location-wrapper {
+#sub-hero-wrapper {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
@@ -269,11 +286,41 @@ nav a.active {
 .sub-hero-div p {
   margin-bottom: 0.8rem;
 }
+.sub-hero-div p span {
+  font-weight: bold;
+}
 .sub-hero-div h3 {
   margin-bottom: 0.8rem;
   font-size: 1.05rem;
   color: #ffae00;
   text-align: center;
+}
+#sub-hero1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+#sub-hero1 p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 600px;
+}
+#sub-hero1 div {
+  padding: 1rem;
+}
+#sub-hero1 img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#hours-div {
+  margin: auto;
+}
+#location-div {
+  margin: auto;
 }
 #map-div {
   width: 100%;
