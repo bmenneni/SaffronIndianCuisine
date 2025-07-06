@@ -115,6 +115,10 @@ nav a.active {
     position: absolute;
     right: 2rem; /* Push to far right */
   }
+
+  #sub-hero1 {
+    margin: auto;
+  }
 }
 
 
@@ -241,7 +245,6 @@ nav a.active {
   padding: 4rem 2rem;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #000;
   border-radius: 8px;
 }
 
