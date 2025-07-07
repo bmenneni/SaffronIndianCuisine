@@ -10,7 +10,7 @@
   <header>
     <div class="header-left">
       <a href="index.html">
-        <img src="assets/saffron-indian-cuisine.jpg" class="logo" alt="Saffron Logo">
+        <img src="assets/saffron-logo2.jpeg" class="logo" alt="Saffron Logo">
       </a>
       <!-- Hamburger button (shown only on mobile) -->
       <button id="hamburger-btn" aria-label="Toggle navigation">
@@ -22,6 +22,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="menu.html" class="active">Menu</a></li>
           <li><a href="catering.html">Catering</a></li>
         </ul>
@@ -31,9 +32,30 @@
   </header>
   <main class="main-background">
     <h2 class="menu-title">Our Menu</h2>
+    <!-- Category Navbar Container -->
+    <div class="category-nav-wrapper">
+      <button class="scroll-arrow left-arrow" aria-label="Scroll left">&#9664;</button>
+      <div class="category-scroll-container" id="category-scroll">
+        <ul class="category-nav">
+          <li><a href="#veg-appetizers">Veg Appetizers</a></li>
+          <li><a href="#non-veg-appetizers">Non-Veg Appetizers</a></li>
+          <li><a href="#veg-entrees">Veg Entrées</a></li>
+          <li><a href="#non-veg-entrees">Non-Veg Entrées</a></li>
+          <li><a href="#tandoor-specials">Tandoor Specials</a></li>
+          <li><a href="#rice-specials">Biryani Specials</a></li>
+          <li><a href="#indo-chinese-specials">Indo-Chinese Specials</a></li>
+          <li><a href="#kids-menu">Kids' Menu</a></li>
+          <li><a href="#breads">Breads</a></li>
+          <li><a href="#desserts">Desserts</a></li>
+          <li><a href="#beverages">Beverages</a></li>
+        </ul>
+      </div>
+      <button class="scroll-arrow right-arrow" aria-label="Scroll right">&#9654;</button>
+    </div>
+    <br>
     <!-- Category: Vegetarian Appetizers -->
     <section class="menu-category">
-      <h3>Vegetarian Appetizers</h3>
+      <h3 id="veg-appetizers">Vegetarian Appetizers</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Veg Samosa (2 Pieces)</h4>
@@ -124,7 +146,7 @@
     </section>
     <!-- Category: Non-Vegetarian Appetizers -->
     <section class="menu-category">
-      <h3>Non-Vegetarian Appetizers</h3>
+      <h3 id="non-veg-appetizers">Non-Vegetarian Appetizers</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Chicken 65 </h4>
@@ -200,7 +222,7 @@
     </section>
     <!-- Category: Vegetarian Entrées -->
     <section class="menu-category">
-      <h3>Vegetarian Entrées</h3>
+      <h3 id="veg-entrees">Vegetarian Entrées</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Paneer Butter Masala </h4>
@@ -291,7 +313,7 @@
     </section>
     <!-- Category: Non-Vegetarian Entrées -->
     <section class="menu-category">
-      <h3>Non-Vegetarian Entrées</h3>
+      <h3 id="non-veg-entrees">Non-Vegetarian Entrées</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Egg Masala </h4>
@@ -407,7 +429,7 @@
     </section>
     <!-- Category: Tandoor Specialties -->
     <section class="menu-category">
-      <h3>Tandoor (Clay Oven) Specialties</h3>
+      <h3 id="tandoor-specials">Tandoor (Clay Oven) Specials</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Tandoori Paneer Tikka </h4>
@@ -448,7 +470,7 @@
     </section>
     <!-- Category: Rice Specialties (Biryani) -->
     <section class="menu-category">
-      <h3>Rice Specialties (Biryani)</h3>
+      <h3 id="rice-specials">Rice Specials (Biryani)</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Veg Biryani </h4>
@@ -529,7 +551,7 @@
     </section>
     <!-- Category: Indo-Chinese Specials -->
     <section class="menu-category">
-      <h3>Indo-Chinese Specials</h3>
+      <h3 id="indo-chinese-specials">Indo-Chinese Specials</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Veg Noodles</h4>
@@ -580,7 +602,7 @@
     </section>
     <!-- Category: Kids’ Menu -->
     <section class="menu-category">
-      <h3>Kids’ Menu</h3>
+      <h3 id="kids-menu">Kids’ Menu</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Chicken Nuggets</h4>
@@ -606,7 +628,7 @@
     </section>
     <!-- Category: Breads -->
     <section class="menu-category">
-      <h3>Breads</h3>
+      <h3 id="breads">Breads</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Butter Naan</h4>
@@ -647,7 +669,7 @@
     </section>
     <!-- Category: Desserts -->
     <section class="menu-category">
-      <h3>Desserts</h3>
+      <h3 id="desserts">Desserts</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Rasmalai</h4>
@@ -673,7 +695,7 @@
     </section>
     <!-- Category: Beverages -->
     <section class="menu-category">
-      <h3>Beverages</h3>
+      <h3 id="beverages">Beverages</h3>
       <div class="menu-grid">
         <div class="menu-card">
           <h4>Mango Lassi</h4>
@@ -738,6 +760,34 @@
   hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
     main.classList.toggle("menu-open");
+  });
+
+  const scrollContainer = document.getElementById("category-scroll");
+  const leftArrow = document.querySelector(".left-arrow");
+  const rightArrow = document.querySelector(".right-arrow");
+  const cat_hamburger = document.getElementById("category-hamburger");
+  const dropdown = document.getElementById("category-dropdown");
+
+  // Show/hide arrows based on scroll
+  function updateArrows() {
+    const scrollLeft = scrollContainer.scrollLeft;
+    const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+    leftArrow.style.display = scrollLeft > 0 ? "block" : "none";
+    rightArrow.style.display = scrollLeft < maxScroll - 5 ? "block" : "none";
+  }
+
+  scrollContainer.addEventListener("scroll", updateArrows);
+  window.addEventListener("resize", updateArrows);
+  document.addEventListener("DOMContentLoaded", updateArrows);
+
+  // Scroll controls
+  leftArrow.addEventListener("click", () => {
+    scrollContainer.scrollBy({ left: -150, behavior: "smooth" });
+  });
+
+  rightArrow.addEventListener("click", () => {
+    scrollContainer.scrollBy({ left: 150, behavior: "smooth" });
   });
   </script>
 </body>

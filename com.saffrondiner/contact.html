@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Saffron Indian Cuisine</title>
+  <link rel="stylesheet" href="saffron-styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="index.html">
+        <img src="assets/saffron-logo2.jpeg" class="logo" alt="Saffron Logo">
+      </a>
+      <!-- Hamburger button (shown only on mobile) -->
+      <button id="hamburger-btn" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+    </div>
+    <nav id="main-nav">
+      <div class="center-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+        </ul>
+      </div>
+      <a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="order-btn">Order Online</a>
+    </nav>
+  </header>
+  <main class="main-background">
+  	<h2 class="menu-title">Contact Us</h2>
+  	  <div class="sub-hero-div" id="hours-div">
+        <h3>Open Hours</h3>
+        <p><span>Tuesday to Thursday:</span> 11am-2pm, 4pm-9pm</p>
+        <p><span>Friday:</span> 11am-2pm, 4pm-9:30pm</p>
+        <p><span>Saturday:</span> 11am-2:30pm, 4pm-9:30pm</p>
+        <p><span>Sunday:</span> 11am-2:30pm, 4pm-9pm</p>
+        <p><span>Monday:</span> Closed</p>
+      </div>
+      <br>
+      <div class="sub-hero-div" id="location-div">
+        <h3>Location and Contact</h3>
+        <p>8769 Northpark Dr</p>
+        <p>Johnston, IA 50131</p>
+        <p>(515) 897-0460</p>
+      </div>
+      <br>
+      <div id="map-div">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.1314041994365!2d-93.74092182368527!3d41.655665671267116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee9d83fd0709a1%3A0x66158df3b0bf4524!2s8769%20Northpark%20Dr%2C%20Johnston%2C%20IA%2050131!5e1!3m2!1sen!2sus!4v1750944345070!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </main>
+  <script>
+  const hamburger = document.getElementById("hamburger-btn");
+  const nav = document.getElementById("main-nav");
+  const main = document.querySelector('main');
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    main.classList.toggle("menu-open");
+  });
+  </script>
+</body>
+</html>
