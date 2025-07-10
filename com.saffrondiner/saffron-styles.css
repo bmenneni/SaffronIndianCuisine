@@ -28,10 +28,6 @@ header {
   border-bottom: 3px solid #e08700;
   height: 150px;
 }
-header h1 {
-  color: #f5b400;
-  font-size: 1.8rem;
-}
 #main-nav {
   z-index: 10;
   background-color: #000;
@@ -192,6 +188,18 @@ nav a.active {
     padding: 0.5rem 1rem;
   }
 
+  .main-container {
+    flex-direction: column;
+  }
+
+  .even-container {
+    flex-direction: column-reverse;
+  }
+
+  .text-container p {
+    text-align: center;
+  }
+
   main.menu-open {
     background-color: #fff9de;
     position: relative;
@@ -245,9 +253,10 @@ nav a.active {
   margin: 0 auto;
   border-radius: 8px;
 }
-.hero h2 {
+.hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
 }
 .hero p {
   font-size: 1.1rem;
@@ -268,6 +277,36 @@ nav a.active {
 }
 .cta-button:hover {
   background-color: #e08700;
+}
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+.text-container, .image-container {
+  flex: 1;
+}
+.text-container {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.text-container h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.text-container p {
+  color: #ff8040;
+  font-size: 1.5rem;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 .sub-hero-div {
   padding: 1rem 1.25rem;
