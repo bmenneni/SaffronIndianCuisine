@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZSZ8N3B');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298758532"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17298758532');
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saffron Indian Cuisine</title>
   <link rel="stylesheet" href="saffron-styles.css" />
 </head>
+<body>
   <header>
     <div class="header-left">
       <a href="index.html">
-        <img src="assets/saffron-logo2.jpeg" class="logo" alt="Saffron Logo">
+        <img src="assets/saffron-logo-white.png" class="logo" alt="Saffron Logo">
       </a>
       <!-- Hamburger button (shown only on mobile) -->
       <button id="hamburger-btn" aria-label="Toggle navigation">
         &#9776;
       </button>
     </div>
-    <nav id="main-nav">
+    <nav class="main-nav">
       <div class="center-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -29,59 +46,67 @@
       <a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="order-btn">Order Online</a>
     </nav>
   </header>
-  <main>
-    <section class="hero">
-      <video autoplay muted loop playslinline id="hero-video">
-        <source src="assets/tiny_sparks2.webm" type="video/webm">
-      </video>
-      <div id="hero-content">
-        <h1>Welcome to <i>Saffron</i></h1>
-        <p>Authentic flavors of India in every bite. Experience a vibrant culinary journey right here in Des Moines.</p>
-        <a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="cta-button">Order Online Now</a>
-      </div>
-    </section>
-      <div class="main-container">
-        <div class="text-container">
-          <h2>Experience the Flavors of India</h2>
-          <p>From rich curries to sizzling tandoori, our menu celebrates the diversity of Indian cuisine. Discover comforting classics and bold regional specialties made with love.</p>
+  <div class="main-overlay">
+    <main>
+      <section class="hero">
+        <div class="video-container">
+          <video autoplay muted loop playslinline id="hero-video">
+            <source src="assets/tiny_sparks2.webm" type="video/webm">
+          </video>
         </div>
-        <div class="image-container">
-          <img src="assets/biryani1.webp" alt="Food Spread">
+        <div id="hero-content">
+          <h1>Welcome to <span class="saffron-title">Saffron</span></h1>
+          <p>Authentic flavors of India in every bite. Experience a vibrant culinary journey right here in Des Moines.</p>
+          <a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="cta-button">Order Online Now</a>
         </div>
-      </div>
-      <br>
-      <div class="main-container even-container">
-        <div class="image-container">
-          <img src="assets/chicken-rice.webp" alt="A Dish of Chicken Biryani">
+      </section>
+        <div class="main-container">
+          <div class="text-container">
+            <h2>Experience the Flavors of India</h2>
+            <p>From rich curries to sizzling tandoori, our menu celebrates the diversity of Indian cuisine. Discover comforting classics and bold regional specialties made with love.</p>
+          </div>
+          <div class="image-container">
+            <img src="assets/biryani1.webp" alt="Food Spread">
+          </div>
         </div>
-        <div class="text-container">
-          <h2>A Feast for Every Afternoon</h2>
-          <p>Join us for our indulgent lunch buffet — a rotating selection of regional Indian favorites, from rich curries and crisp appetizers to fresh-baked naan and sweet desserts. Perfect for workday lunches or leisurely midday breaks.</p>
+        <br>
+        <div class="main-container even-container">
+          <div class="image-container">
+            <img src="assets/chicken-rice.webp" alt="A Dish of Chicken Biryani">
+          </div>
+          <div class="text-container">
+            <h2>A Feast for Every Afternoon</h2>
+            <p>Join us for our indulgent lunch buffet — a rotating selection of regional Indian favorites, from rich curries and crisp appetizers to fresh-baked naan and sweet desserts. Perfect for workday lunches or leisurely midday breaks.</p>
+          </div>
         </div>
-      </div>
-      <br>
-      <div class="main-container">
-        <div class="text-container">
-          <h2>Celebrate with Catering</h2>
-          <p>Let us bring the taste of Saffron to your next gathering. Whether it's a wedding, party, or corporate event, our catering service makes every occasion special. Host with flavor!</p>
+        <br>
+        <div class="main-container">
+          <div class="text-container">
+            <h2>Celebrate with Catering</h2>
+            <p>Let us bring the taste of Saffron to your next gathering. Whether it's a wedding, party, or corporate event, our catering service makes every occasion special. Host with flavor!</p>
+          </div>
+          <div class="image-container" id="gulab-jamun-container">
+            <img src="assets/gulab-jamun.webp" alt="Special Dessert for Catering">
+          </div>
         </div>
-        <div class="image-container">
-          <img src="assets/gulab-jamun.webp" alt="Special Dessert for Catering">
-        </div>
-      </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Saffron Indian Cuisine. All rights reserved.</p>
-  </footer>
+    </main>
+    <footer>
+      <p>&copy; 2025 Saffron Indian Cuisine. All rights reserved.</p>
+    </footer>
+  </div>
   <script>
   const hamburger = document.getElementById("hamburger-btn");
-  const nav = document.getElementById("main-nav");
-  const main = document.querySelector('main');
+  const nav = document.querySelector(".main-nav");
+  const main = document.querySelector("main");
 
   hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
     main.classList.toggle("menu-open");
   });
   </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZSZ8N3B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>

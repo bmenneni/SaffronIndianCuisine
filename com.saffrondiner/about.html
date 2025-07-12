@@ -10,14 +10,14 @@
   <header>
     <div class="header-left">
       <a href="index.html">
-        <img src="assets/saffron-logo2.jpeg" class="logo" alt="Saffron Logo">
+        <img src="assets/saffron-logo-white.png" class="logo" alt="Saffron Logo">
       </a>
       <!-- Hamburger button (shown only on mobile) -->
       <button id="hamburger-btn" aria-label="Toggle navigation">
         &#9776;
       </button>
     </div>
-    <nav id="main-nav">
+    <nav class="main-nav">
       <div class="center-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,42 +30,29 @@
       <a href="https://order.toasttab.com/online/saffron-indian-cuisine-8769-northpark-drive" target="_blank" class="order-btn">Order Online</a>
     </nav>
   </header>
-  <main class="main-background about-page">
+  <main class="main-background">
     <section class="about-section">
-      <h2 id="about-title">About Us</h2>
-      <p>
-        At <strong>Saffron Indian Cuisine</strong>, we bring the rich and diverse flavors of India to your table with a modern touch and authentic spirit. 
-        Founded with a passion for traditional Indian cooking and warm hospitality, Saffron is more than just a restaurant – it’s a celebration of culture, community, and culinary artistry.
-      </p>
-      <br>
-      <p>
-        Our chefs craft each dish using the finest ingredients, aromatic spices, and time-honored recipes passed down through generations. From sizzling tandoori dishes to creamy butter chicken, spicy vindaloo to freshly baked naan and vegetarian delicacies, every plate is a vibrant expression of India’s culinary heritage.
-      </p>
-      <br>
-      <p>
-        Whether you're joining us for a family dinner, a casual lunch, or a special occasion, our team is dedicated to providing a welcoming atmosphere and exceptional service.
-      </p>
-      <br>
-      <p>
-        Come experience the taste of India – bold, flavorful, and unforgettable – only at Saffron Indian Cuisine.
-      </p>
-    </section>
-
-    <section class="about-mission">
-      <h3>🎯 Mission Statement</h3>
-      <p>
-        At Saffron Indian Cuisine, our mission is to elevate the essence of Indian fine dining by artfully blending timeless culinary traditions with modern elegance.
-        We are dedicated to offering a refined experience through meticulously crafted dishes, exceptional service, and a soothing ambiance of fine dining.
-      </p>
-    </section>
-
-    <section class="about-vision">
-      <h3>🌟 Vision Statement</h3>
-      <p>
-        Our vision is to be recognized as the premier destination for fine Indian dining—where authenticity meets innovation.
-        We aspire to set new standards in Indian gastronomy, captivating guests with exquisite flavors, impeccable presentation, 
-        and a luxurious dining experience that celebrates India’s culinary heritage on a global stage.
-      </p>
+      <div class="title-box">
+        <h2>About Us</h2>
+      </div>
+      <div class="about-container">
+        <p>
+          At <strong>Saffron Indian Cuisine</strong>, we bring the rich and diverse flavors of India to your table with a modern touch and authentic spirit. 
+          Founded with a passion for traditional Indian cooking and warm hospitality, Saffron is more than just a restaurant – it’s a celebration of culture, community, and culinary artistry.
+        </p>
+        <br>
+        <p>
+          Our chefs craft each dish using the finest ingredients, aromatic spices, and time-honored recipes passed down through generations. From sizzling tandoori dishes to creamy butter chicken, spicy vindaloo to freshly baked naan and vegetarian delicacies, every plate is a vibrant expression of India’s culinary heritage.
+        </p>
+        <br>
+        <p>
+          Whether you're joining us for a family dinner, a casual lunch, or a special occasion, our team is dedicated to providing a welcoming atmosphere and exceptional service.
+        </p>
+        <br>
+        <p>
+          Come experience the taste of India – bold, flavorful, and unforgettable – only at Saffron Indian Cuisine.
+        </p>
+      </div>
     </section>
   </main>
   <footer>
@@ -73,8 +60,8 @@
   </footer>
   <script>
   const hamburger = document.getElementById("hamburger-btn");
-  const nav = document.getElementById("main-nav");
-  const main = document.querySelector('main');
+  const nav = document.querySelector(".main-nav");
+  const main = document.querySelector("main");
 
   hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
