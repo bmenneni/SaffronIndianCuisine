@@ -344,7 +344,6 @@ nav a.active {
 .text-container p {
   color: #3a3a3a;
   font-size: 1.1rem;
-  font-family: 'Libre Baskerville', serif;
 }
 .image-container img {
   width: 90%;
@@ -743,4 +742,16 @@ footer {
 
 #map-div {
   margin: auto;
+}
+
+.special-container img {
+  max-height: 100vh;
+  max-width: 100vw;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+#special-title {
+  text-align: center;
 }
