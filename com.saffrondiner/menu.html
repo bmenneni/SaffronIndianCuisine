@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Menu | Saffron Indian Cuisine</title>
   <link rel="stylesheet" href="saffron-styles.css" />
+  <script src="saffron-global.js" defer></script>
+  <script src="saffron-menu.js" defer></script>
 </head>
 <body>
   <header>
@@ -1204,43 +1206,5 @@
       <p>&copy; 2025 Saffron Indian Cuisine. All rights reserved.</p>
     </footer>
   </div>
-  <script>
-    const hamburger = document.getElementById("hamburger-btn");
-    const nav = document.querySelector(".main-nav");
-    const main = document.querySelector("main");
-
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
-      main.classList.toggle("menu-open");
-    });
-
-    const scrollContainer = document.getElementById("category-scroll");
-    const leftArrow = document.querySelector(".left-arrow");
-    const rightArrow = document.querySelector(".right-arrow");
-    const cat_hamburger = document.getElementById("category-hamburger");
-    const dropdown = document.getElementById("category-dropdown");
-
-    // Show/hide arrows based on scroll
-    function updateArrows() {
-      const scrollLeft = scrollContainer.scrollLeft;
-      const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-
-      leftArrow.style.display = scrollLeft > 0 ? "block" : "none";
-      rightArrow.style.display = scrollLeft < maxScroll - 5 ? "block" : "none";
-    }
-
-    scrollContainer.addEventListener("scroll", updateArrows);
-    window.addEventListener("resize", updateArrows);
-    document.addEventListener("DOMContentLoaded", updateArrows);
-
-    // Scroll controls
-    leftArrow.addEventListener("click", () => {
-      scrollContainer.scrollBy({ left: -150, behavior: "smooth" });
-    });
-
-    rightArrow.addEventListener("click", () => {
-      scrollContainer.scrollBy({ left: 150, behavior: "smooth" });
-    });
-  </script>
 </body>
 </html>
