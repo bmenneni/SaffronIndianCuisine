@@ -67,12 +67,16 @@ nav a.active {
   background-color: #f3b000;
   border-radius: 5px;
 }
+.doordash-btn:hover {
+  background-color: #ffd166;
+}
 .order-btn {
   background-color: #d15a1e;
   color: #fff8e1;
+  font-weight: bold;
 }
-.order-btn:hover,
-.order-btn:active {
+.order-btn:hover {
+  background-color: #ffd166;
   color: #333;
 }
 #hamburger-btn {
@@ -86,7 +90,7 @@ nav a.active {
 }
 
 /* ===Desktop View=== */
-@media (min-width: 1279px) {
+@media (min-width: 1400px) {
   /* Ensure header is a flex container */
   header {
     display: flex;
@@ -138,7 +142,7 @@ nav a.active {
 }
 
 /* ===Mobile View=== */
-@media (max-width: 1279px) {
+@media (max-width: 1399px) {
   header {
     flex-direction: row;
     flex-wrap: wrap;
@@ -270,12 +274,10 @@ nav a.active {
   object-fit: cover;
   z-index: 0;
 }
-/*
 .video-container video {
   mix-blend-mode: lighten;
   opacity: 0.8;
 }
-*/
 #hero-content {
   position: relative;
   z-index: 1;
@@ -555,7 +557,7 @@ footer {
   font-size: 1.1rem;
 }
 
-@media(max-width: 1279px) {
+@media(max-width: 1399px) {
   .menu-grid {
     grid-template-columns: 1fr;
   }
