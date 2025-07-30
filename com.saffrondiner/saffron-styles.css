@@ -70,6 +70,10 @@ nav a.active {
 .doordash-btn:hover {
   background-color: #ffd166;
 }
+.doordash-btn img {
+  height: 16px;
+  width: 124px;
+}
 .order-btn {
   background-color: #d15a1e;
   color: #fff8e1;
