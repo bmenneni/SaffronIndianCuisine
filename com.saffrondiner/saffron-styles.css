@@ -67,10 +67,22 @@ nav a.active {
   background-color: #f3b000;
   border-radius: 5px;
 }
-.doordash-btn:hover {
+.delivery-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.delivery-links a {
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.delivery-links a:hover {
   background-color: #ffd166;
 }
-.doordash-btn img {
+.delivery-links img {
   height: 16px;
   width: 124px;
 }
@@ -100,6 +112,10 @@ nav a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  nav ul {
+      align-items: center;
   }
 
   /* Logo + hamburger (left side) */
@@ -364,14 +380,15 @@ nav a.active {
 
 .major-section {
   padding: 2rem;
-  text-align: center;
 }
 
 .major-section-title {
   font-size: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   background-color: rgba(255, 249, 222, 0.5);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 /* Dish Gallery Styles */
@@ -391,7 +408,7 @@ nav a.active {
 .sub-hero-div {
   padding: 1rem 1.25rem;
   color: #f5f5f5;
-  background-color: #1f1f1f;
+  background-color: rgba(255, 249, 222, 0.5);
   border-radius: 6px;
   width: 90%;
   max-width: 500px;
@@ -399,6 +416,7 @@ nav a.active {
 }
 .sub-hero-div p {
   margin-bottom: 0.8rem;
+  color: #7c5c32;
 }
 .sub-hero-div p span {
   font-weight: bold;
@@ -406,7 +424,7 @@ nav a.active {
 .sub-hero-div h3 {
   margin-bottom: 0.8rem;
   font-size: 1.05rem;
-  color: #ffae00;
+  color: #eb7c05;
   text-align: center;
 }
 #sub-hero1 {
@@ -436,6 +454,9 @@ nav a.active {
 }
 #location-div {
   margin: auto;
+}
+#location-div p {
+  text-align: center;
 }
 #map-div {
   width: 100%;
@@ -661,7 +682,7 @@ footer {
   text-decoration: none;
 }
 
-/* Catering */
+/* Catering Page Styles */
 #catering-title {
   white-space: wrap;
 }
@@ -678,13 +699,13 @@ footer {
   max-width: 800px;
   margin: 2rem auto;
   margin-bottom: 2.5rem;
-  background-color: #1f1f1f;
+  background-color: rgba(255, 249, 222, 0.5);
   padding: 1.5rem;
   border-radius: 8px;
 }
 
 .catering-section h3 {
-  color: #fff0c2;
+  color: #7c5c32;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
@@ -694,11 +715,11 @@ footer {
   padding-left: 1.5rem;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #f5f5f5;
+  color: #1f1f1f;
 }
 
 .catering-list li strong {
-  color: #f5b400;
+  color: #db3b01;
 }
 
 .contact-box {
@@ -730,7 +751,7 @@ footer {
   color: #fff0c2;
 }
 
-/* ===== ABOUT PAGE STYLES ===== */
+/* About Page Styles */
 .about-page {
   max-width: 900px;
   margin: 0 auto;
@@ -756,11 +777,26 @@ footer {
 .special-container img {
   max-height: 100vh;
   max-width: 100vw;
-  width: 600px;
   height: auto;
   margin: auto;
   display: block;
 }
-#special-title {
-  text-align: center;
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 15px;
+}
+
+#topBtn:hover {
+  background-color: #555;
 }

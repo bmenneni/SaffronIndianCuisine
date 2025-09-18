@@ -25,3 +25,21 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
   scrollContainer.scrollBy({ left: 150, behavior: "smooth" });
 });
+
+//Button to Navigate to Top
+let topButton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
